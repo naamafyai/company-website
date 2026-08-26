@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Intelligence & Analytics — NaamaFy AI</title>
+<meta name="description" content="Interactive dashboards, executive reports, and KPI monitoring built on Power BI and Microsoft Fabric — turning raw data into decisions on sales, profitability, inventory, and operations.">
+<link rel="canonical" href="https://www.naamafy.ai/business-intelligence.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <rect x="2" y="18" width="5" height="12" rx="1.5" fill="#276E68"/>
+        <rect x="9.5" y="12" width="5" height="18" rx="1.5" fill="#276E68"/>
+        <rect x="17" y="6" width="5" height="24" rx="1.5" fill="#5457E5"/>
+        <path d="M2 14 L10 8 L17.5 3 L26 2" stroke="#E79A34" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <circle cx="26" cy="2" r="2.4" fill="#E79A34"/>
+      </svg>
+      <span class="brand-name">Naama<em>Fy</em> AI</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <div class="has-dropdown" id="svcDropdown">
+        <a href="index.html#services" id="svcToggle">Services ▾</a>
+        <div class="dropdown">
+          <a href="data-engineering.html"><strong>Data Engineering</strong><span>Pipelines, warehouses, one source of truth</span></a>
+          <a href="business-intelligence.html"><strong>Business Intelligence</strong><span>Dashboards, KPIs, executive reporting</span></a>
+          <a href="ai-automation.html"><strong>AI &amp; Automation</strong><span>Agents, workflows, document processing</span></a>
+          <a href="web-development.html"><strong>Website Design &amp; Development</strong><span>Sites, portals, e-commerce</span></a>
+          <a href="custom-software.html"><strong>Custom Software</strong><span>Applications built for your operations</span></a>
+        </div>
+      </div>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="index.html#contact" class="nav-cta">Book a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="subhero">
+    <div class="container subhero-grid">
+      <div>
+        <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#services">Services</a> / Business Intelligence</div>
+        <div class="eyebrow">Business Intelligence &amp; Analytics</div>
+        <h1>See what's actually happening in your business — before the month-end meeting.</h1>
+        <p class="lead">Interactive dashboards, executive reports, and KPI monitoring that turn raw data into answers on sales, profitability, inventory, customer behavior, and finance.</p>
+        <div class="pill-row">
+          <span class="pill pill-logo"><img src="logos/power-bi.svg" alt="Power BI"></span><span class="pill pill-logo"><img src="logos/microsoft-fabric.svg" alt="Microsoft Fabric"></span><span class="pill">DAX</span><span class="pill">Row-Level Security</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="index.html#contact" class="btn btn-primary">See what a dashboard could show you</a>
+        </div>
+      </div>
+
+      <div class="visual-frame">
+        <svg viewBox="0 0 460 300" width="100%" role="img" aria-label="Executive dashboard with KPI tiles and charts">
+          <rect x="0" y="0" width="460" height="300" rx="10" fill="#fff" stroke="#E1E5EC"/>
+          <rect x="0" y="0" width="460" height="34" rx="10" fill="#F7F8FA"/>
+          <circle cx="18" cy="17" r="4" fill="#F2A0A0"/><circle cx="32" cy="17" r="4" fill="#F2C9A0"/><circle cx="46" cy="17" r="4" fill="#B9E3DB"/>
+          <text x="230" y="21" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#4B5262">EXECUTIVE OVERVIEW</text>
+
+          <!-- KPI tiles -->
+          <g font-family="IBM Plex Mono">
+            <rect x="20" y="50" width="98" height="56" rx="7" fill="#F7F8FA"/>
+            <text x="32" y="70" font-size="8" fill="#848D9E">REVENUE</text>
+            <text x="32" y="92" font-size="16" font-weight="700" fill="#11141A">AED 4.2M</text>
+
+            <rect x="128" y="50" width="98" height="56" rx="7" fill="#F7F8FA"/>
+            <text x="140" y="70" font-size="8" fill="#848D9E">MARGIN</text>
+            <text x="140" y="92" font-size="16" font-weight="700" fill="#276E68">28.4%</text>
+
+            <rect x="236" y="50" width="98" height="56" rx="7" fill="#F7F8FA"/>
+            <text x="248" y="70" font-size="8" fill="#848D9E">OPEN INVOICES</text>
+            <text x="248" y="92" font-size="16" font-weight="700" fill="#11141A">312</text>
+
+            <rect x="344" y="50" width="98" height="56" rx="7" fill="#F7F8FA"/>
+            <text x="356" y="70" font-size="8" fill="#848D9E">ON-TIME %</text>
+            <text x="356" y="92" font-size="16" font-weight="700" fill="#5457E5">94.1%</text>
+          </g>
+
+          <!-- bar chart -->
+          <g>
+            <rect x="20" y="122" width="210" height="150" rx="7" fill="#F7F8FA"/>
+            <line x1="38" y1="250" x2="212" y2="250" stroke="#E1E5EC"/>
+            <rect x="45" y="210" width="16" height="40" rx="2" fill="#276E68"/>
+            <rect x="70" y="185" width="16" height="65" rx="2" fill="#276E68"/>
+            <rect x="95" y="150" width="16" height="100" rx="2" fill="#5457E5"/>
+            <rect x="120" y="195" width="16" height="55" rx="2" fill="#276E68"/>
+            <rect x="145" y="140" width="16" height="110" rx="2" fill="#5457E5"/>
+            <rect x="170" y="165" width="16" height="85" rx="2" fill="#276E68"/>
+            <path d="M53 220 L78 195 L103 160 L128 205 L153 150 L178 175" stroke="#E79A34" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="35" y="138" font-family="IBM Plex Mono" font-size="8" fill="#848D9E">MONTHLY REVENUE</text>
+          </g>
+
+          <!-- donut -->
+          <g>
+            <rect x="240" y="122" width="200" height="150" rx="7" fill="#F7F8FA"/>
+            <text x="255" y="140" font-family="IBM Plex Mono" font-size="8" fill="#848D9E">BY REGION</text>
+            <circle cx="300" cy="200" r="42" fill="none" stroke="#E4EFED" stroke-width="16"/>
+            <circle cx="300" cy="200" r="42" fill="none" stroke="#276E68" stroke-width="16" stroke-dasharray="120 264" transform="rotate(-90 300 200)"/>
+            <circle cx="300" cy="200" r="42" fill="none" stroke="#5457E5" stroke-width="16" stroke-dasharray="80 264" stroke-dashoffset="-120" transform="rotate(-90 300 200)"/>
+            <circle cx="300" cy="200" r="42" fill="none" stroke="#E79A34" stroke-width="16" stroke-dasharray="64 264" stroke-dashoffset="-200" transform="rotate(-90 300 200)"/>
+            <g font-family="IBM Plex Mono" font-size="8" fill="#4B5262">
+              <circle cx="360" cy="180" r="4" fill="#276E68"/><text x="368" y="184">UAE</text>
+              <circle cx="360" cy="198" r="4" fill="#5457E5"/><text x="368" y="202">Africa</text>
+              <circle cx="360" cy="216" r="4" fill="#E79A34"/><text x="368" y="220">LatAm</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">What this includes</div>
+        <h2>Reporting your leadership team actually opens.</h2>
+      </div>
+      <div class="checklist reveal">
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Interactive dashboards</strong>Built for the questions your team actually asks, not a generic template.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Executive &amp; board reporting</strong>Clean, consistent numbers that hold up under scrutiny.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>KPI monitoring</strong>Sales, profitability, inventory, customer behavior, finance, and receivables in one view.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Row-level security</strong>The right people see the right data — nothing more, nothing less.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>DAX &amp; data modeling</strong>Measures that are correct, fast, and maintainable — not fragile formulas.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Scheduled refresh &amp; monitoring</strong>Reports that stay live and get flagged the moment something breaks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="approach">
+      <div class="approach-inner">
+        <div class="eyebrow" style="color:#8FE0D6;">How we approach it</div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">01 — DEFINE</div>
+            <h4>What decision does this drive?</h4>
+            <p>Every dashboard starts from a real decision your team makes, not a list of available fields.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">02 — MODEL</div>
+            <h4>Build the measures right</h4>
+            <p>Clean semantic models and DAX that stay accurate as data grows and edge cases appear.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">03 — ADOPT</div>
+            <h4>Make it part of the routine</h4>
+            <p>Training and access setup so the dashboard actually gets opened every week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band reveal">
+      <h2>Still exporting to Excel to get a straight answer?</h2>
+      <p>Show us your current report. We'll show you what it looks like as a live dashboard.</p>
+      <a href="index.html#contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="18" width="5" height="12" rx="1.5" fill="#276E68"/>
+            <rect x="9.5" y="12" width="5" height="18" rx="1.5" fill="#276E68"/>
+            <rect x="17" y="6" width="5" height="24" rx="1.5" fill="#5457E5"/>
+          </svg>
+          <span class="brand-name">Naama<em>Fy</em> AI</span>
+        </div>
+        <p style="max-width:280px;font-size:.9rem;">A UAE-based business technology consultancy: data, BI, AI automation, web and custom software.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="data-engineering.html">Data Engineering</a>
+        <a href="business-intelligence.html">Business Intelligence</a>
+        <a href="ai-automation.html">AI &amp; Automation</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="custom-software.html">Custom Software</a>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <a href="mailto:contact@naamafyai.com">contact@naamafyai.com</a>
+        <a href="#">Dubai, United Arab Emirates</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NaamaFy AI. All rights reserved.</span>
+      <span>Dubai, UAE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.getElementById('svcToggle').addEventListener('click', (e) => {
+    if (window.innerWidth <= 860) { e.preventDefault(); document.getElementById('svcDropdown').classList.toggle('open'); }
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

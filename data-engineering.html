@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Engineering & Modern Data Platforms — NaamaFy AI</title>
+<meta name="description" content="Data integration, ETL/ELT pipelines, cloud data warehouses, and real-time processing that turn scattered systems into one reliable source of truth. Microsoft Fabric, Azure, Databricks.">
+<link rel="canonical" href="https://www.naamafy.ai/data-engineering.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <rect x="2" y="18" width="5" height="12" rx="1.5" fill="#276E68"/>
+        <rect x="9.5" y="12" width="5" height="18" rx="1.5" fill="#276E68"/>
+        <rect x="17" y="6" width="5" height="24" rx="1.5" fill="#5457E5"/>
+        <path d="M2 14 L10 8 L17.5 3 L26 2" stroke="#E79A34" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <circle cx="26" cy="2" r="2.4" fill="#E79A34"/>
+      </svg>
+      <span class="brand-name">Naama<em>Fy</em> AI</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <div class="has-dropdown" id="svcDropdown">
+        <a href="index.html#services" id="svcToggle">Services ▾</a>
+        <div class="dropdown">
+          <a href="data-engineering.html"><strong>Data Engineering</strong><span>Pipelines, warehouses, one source of truth</span></a>
+          <a href="business-intelligence.html"><strong>Business Intelligence</strong><span>Dashboards, KPIs, executive reporting</span></a>
+          <a href="ai-automation.html"><strong>AI &amp; Automation</strong><span>Agents, workflows, document processing</span></a>
+          <a href="web-development.html"><strong>Website Design &amp; Development</strong><span>Sites, portals, e-commerce</span></a>
+          <a href="custom-software.html"><strong>Custom Software</strong><span>Applications built for your operations</span></a>
+        </div>
+      </div>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="index.html#contact" class="nav-cta">Book a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="subhero">
+    <div class="container subhero-grid">
+      <div>
+        <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#services">Services</a> / Data Engineering</div>
+        <div class="eyebrow">Data Engineering &amp; Modern Data Platforms</div>
+        <h1>Your reports are only as good as the pipeline underneath them.</h1>
+        <p class="lead">We connect scattered systems — spreadsheets, ERPs, cloud apps, legacy databases — into one reliable, well-modeled source of truth your whole business can build on.</p>
+        <div class="pill-row">
+          <span class="pill pill-logo"><img src="logos/microsoft-fabric.svg" alt="Microsoft Fabric"></span><span class="pill pill-logo"><img src="logos/azure.svg" alt="Azure Synapse"></span><span class="pill pill-logo"><img src="logos/databricks.svg" alt="Databricks"></span><span class="pill">Delta Lake</span><span class="pill pill-logo"><img src="logos/apache-spark.svg" alt="PySpark"></span>
+        </div>
+        <div class="hero-ctas">
+          <a href="index.html#contact" class="btn btn-primary">Talk to us about your data</a>
+        </div>
+      </div>
+
+      <div class="visual-frame">
+        <svg viewBox="0 0 460 300" width="100%" role="img" aria-label="Multiple data sources flowing into one lakehouse, then out to a single source of truth">
+          <!-- sources -->
+          <g font-family="IBM Plex Mono" font-size="9" fill="#4B5262">
+            <rect x="14" y="24" width="66" height="34" rx="6" fill="#fff" stroke="#E1E5EC"/>
+            <path d="M28 34h10M28 40h20M28 46h14" stroke="#D7DCE4" stroke-width="2" stroke-linecap="round"/>
+            <text x="47" y="70" text-anchor="middle">Spreadsheets</text>
+
+            <rect x="14" y="88" width="66" height="34" rx="6" fill="#fff" stroke="#E1E5EC"/>
+            <ellipse cx="47" cy="98" rx="15" ry="5" fill="none" stroke="#D7DCE4" stroke-width="2"/>
+            <path d="M32 98v14a15 5 0 0030 0V98" fill="none" stroke="#D7DCE4" stroke-width="2"/>
+            <text x="47" y="134" text-anchor="middle">Databases</text>
+
+            <rect x="14" y="152" width="66" height="34" rx="6" fill="#fff" stroke="#E1E5EC"/>
+            <path d="M30 172a8 8 0 018-9 10 10 0 0119-3 7 7 0 01-2 14H30z" fill="none" stroke="#D7DCE4" stroke-width="2"/>
+            <text x="47" y="198" text-anchor="middle">Cloud Apps</text>
+
+            <rect x="14" y="216" width="66" height="34" rx="6" fill="#fff" stroke="#E1E5EC"/>
+            <rect x="28" y="226" width="8" height="14" fill="#D7DCE4"/>
+            <rect x="40" y="222" width="8" height="18" fill="#D7DCE4"/>
+            <rect x="52" y="230" width="8" height="10" fill="#D7DCE4"/>
+            <text x="47" y="262" text-anchor="middle">ERP / Ops</text>
+          </g>
+
+          <!-- flow lines into lakehouse -->
+          <g class="hub-line flow-line" fill="none" stroke="#276E68">
+            <path d="M80 41 C160 41 170 130 205 145"/>
+            <path d="M80 105 C160 105 175 135 205 148"/>
+            <path d="M80 169 C160 169 175 165 205 155"/>
+            <path d="M80 233 C160 233 175 175 205 160"/>
+          </g>
+
+          <!-- lakehouse cylinder -->
+          <g transform="translate(205,95)">
+            <path d="M0 12c0-7 15-12 33-12s33 5 33 12v90c0 7-15 12-33 12S0 109 0 102V12z" fill="#E4EFED" stroke="#276E68" stroke-width="1.4"/>
+            <ellipse cx="33" cy="12" rx="33" ry="12" fill="#F2F8F7" stroke="#276E68" stroke-width="1.4"/>
+            <text x="33" y="66" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#276E68">LAKEHOUSE</text>
+          </g>
+
+          <!-- output line -->
+          <path class="hub-line flow-line" d="M271 145 C320 145 330 145 366 145" fill="none" stroke="#5457E5"/>
+
+          <!-- single source of truth -->
+          <g transform="translate(368,120)">
+            <circle cx="26" cy="26" r="26" fill="#ECEDFC" stroke="#5457E5" stroke-width="1.4"/>
+            <path d="M15 27l7 7 15-15" fill="none" stroke="#5457E5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="26" y="70" text-anchor="middle" font-family="IBM Plex Mono" font-size="8.5" fill="#4B5262">SINGLE SOURCE</text>
+            <text x="26" y="82" text-anchor="middle" font-family="IBM Plex Mono" font-size="8.5" fill="#4B5262">OF TRUTH</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">What this includes</div>
+        <h2>The foundation every dashboard and automation depends on.</h2>
+      </div>
+      <div class="checklist reveal">
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Data integration &amp; ETL/ELT pipelines</strong>Connecting every source system into one consistent, automated flow.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Cloud data warehouses &amp; lakehouses</strong>Built on Microsoft Fabric, Azure Synapse, or Databricks — whichever fits your stack.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Real-time data processing</strong>Numbers your team can trust as of right now, not last month's export.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Data modeling &amp; governance</strong>Structures that make sense to engineers and business users alike.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>API integrations</strong>Getting systems that don't talk to each other, talking.</p>
+        </div>
+        <div class="check-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <p><strong>Migration support</strong>Moving workloads between Databricks, Fabric, and Azure without disrupting daily operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="approach">
+      <div class="approach-inner">
+        <div class="eyebrow" style="color:#8FE0D6;">How we approach it</div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">01 — AUDIT</div>
+            <h4>Map what exists</h4>
+            <p>We trace where your data actually lives today, and where it silently breaks.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">02 — BUILD</div>
+            <h4>Pipeline &amp; platform</h4>
+            <p>We design the ingestion, transformation, and storage layer to match your volume and update cadence.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">03 — VALIDATE</div>
+            <h4>Prove it's trustworthy</h4>
+            <p>Reconciliation and logging so the numbers hold up the first time someone questions them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band reveal">
+      <h2>Ready to stop firefighting broken reports?</h2>
+      <p>Tell us where your data lives today. We'll tell you what it would take to make it trustworthy.</p>
+      <a href="index.html#contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="18" width="5" height="12" rx="1.5" fill="#276E68"/>
+            <rect x="9.5" y="12" width="5" height="18" rx="1.5" fill="#276E68"/>
+            <rect x="17" y="6" width="5" height="24" rx="1.5" fill="#5457E5"/>
+          </svg>
+          <span class="brand-name">Naama<em>Fy</em> AI</span>
+        </div>
+        <p style="max-width:280px;font-size:.9rem;">A UAE-based business technology consultancy: data, BI, AI automation, web and custom software.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="data-engineering.html">Data Engineering</a>
+        <a href="business-intelligence.html">Business Intelligence</a>
+        <a href="ai-automation.html">AI &amp; Automation</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="custom-software.html">Custom Software</a>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <a href="mailto:contact@naamafyai.com">contact@naamafyai.com</a>
+        <a href="#">Dubai, United Arab Emirates</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NaamaFy AI. All rights reserved.</span>
+      <span>Dubai, UAE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.getElementById('svcToggle').addEventListener('click', (e) => {
+    if (window.innerWidth <= 860) { e.preventDefault(); document.getElementById('svcDropdown').classList.toggle('open'); }
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
